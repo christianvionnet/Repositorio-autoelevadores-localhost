@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Vionnet" />
+    <meta
+      name="description"
+      content="Mantenimiento por operario autoelevador"
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento, operario, autoelevador, linde, scania"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Motorización - Mantenimiento Preventivo LINDE E-30</title>
+
+    <link rel="icon" href="/imagen/scania_symbol.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css"
+    />
+    <!-- <script src="https://static.scania.com/build/global/3.5.5/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script> -->
+  </head>
+
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header">
+          <h1 class="title flex">MOTORIZACIÓN ELÉCTRICA</h1>
+          <img class="logo flex" alt="logo scania" src="/imagen/scania2.png" />
+        </div>
+      </header>
+
+      <main>
+        <div class="menu-container ">
+          <div class="timer-button">
+            <button
+              class="menu-button myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              FUNCIONAMIENTO MOTOR DE TRACCIÓN
+            </button>
+            <button
+              class="menu-button myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              FUNCIONAMIENTO MOTOR DE DIRECCIÓN
+            </button>
+            <button
+              class="menu-button myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              CAMBIAR ESCOBILLAS Y RESORTES
+            </button>
+          </div>
+          <div class="reset">
+            <button
+              class="menu-button"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+          </div>
+        </div>
+
+        <div class="flex">
+          <a href="http://127.0.0.1:5501/preventivo/menump.html">
+            <button class="button logout">VOLVER</button>
+          </a>
+        </div>
+      </main>
+
+      <footer class="flex">
+        <div class="footer">
+          <h3>Scania Argentina © 2021</h3>
+        </div>
+      </footer>
+      
+<!-- MODAL 1 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              FUNCIONAMIENTO MOTOR DE TRACCIÓN
+              </div>
+              <form class="form flex" action="" method="POST">
+<div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 1 -->
+
+        <!-- MODAL 2 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              FUNCIONAMIENTO MOTOR DE DIRECCIÓN
+              </div>
+              <form class="form flex" action="" method="POST">
+<div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 2 -->
+
+        <!-- MODAL 3 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              CAMBIAR ESCOBILLAS Y RESORTES
+              </div>
+              <form class="form flex" action="" method="POST">
+<div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 3 -->
+    </div>
+    <script src="/js/setModal.js"></script>
+
+  </body>
+</html>

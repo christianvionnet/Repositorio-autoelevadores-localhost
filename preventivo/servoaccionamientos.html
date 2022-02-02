@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Vionnet" />
+    <meta
+      name="description"
+      content="Mantenimiento por operario autoelevador"
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento, operario, autoelevador, linde, scania"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Servoaccionamientos - Mantenimiento Preventivo LINDE E-30</title>
+
+    <link rel="icon" href="/imagen/scania_symbol.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css"
+    />
+    <!-- <script src="https://static.scania.com/build/global/3.5.5/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script> -->
+  </head>
+
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header">
+          <h1 class="title flex">SERVOACCIONAMIENTOS</h1>
+          <img class="logo flex" alt="logo scania" src="/imagen/scania2.png" />
+        </div>
+      </header>
+
+      <main>
+        <div class="menu-container">
+          <div class="timer-button">
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              ESTADO CADENAS DE ELEVACIÓN Y POLEAS
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              AJUSTAR CADENAS DE ELEVACIÓN
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              LUBRICAR CADENAS DE ELEVACIÓN Y CANALES MÁSTIL
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              ESTADO Y SEGURIDAD DEL MÁSTIL
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              AJUSTAR RODILLOS DEL SOPORTE DE RETRACCIÓN
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              LUBRICAR RODILLO Y CANALES DE RETRACCIÓN
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              LUBRICAR PORTA HORQUILLAS Y ACCESORIO DE DESP LATERAL
+            </button>
+            <button
+              class="menu-button servo myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              FUNCIONAMIENTO DE SERVOACCIONAMIENTOS EN GENERAL
+            </button>
+          </div>
+          <div class="reset">
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button servo"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+          </div>
+        </div>
+
+        <div class="flex">
+          <a href="http://127.0.0.1:5501/preventivo/menump.html">
+            <button class="button logout">VOLVER</button>
+          </a>
+        </div>
+      </main>
+
+      <footer class="flex">
+        <div class="footer">
+          <h3>Scania Argentina © 2021</h3>
+        </div>
+      </footer>
+
+<!-- MODAL 1 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+                ESTADO CADENAS DE ELEVACIÓN Y POLEAS
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 1 -->
+
+        <!-- MODAL 2 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+                AJUSTAR CADENAS DE ELEVACIÓN
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 2 -->
+
+        <!-- MODAL 3 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+                LUBRICAR CADENAS DE ELEVACIÓN Y CANALES MÁSTIL
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 3 -->
+
+        <!-- MODAL 4 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+                ESTADO Y SEGURIDAD DEL MÁSTIL
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 4 -->
+
+        <!-- MODAL 5 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              AJUSTAR RODILLOS DEL SOPORTE DE RETRACCIÓN
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 5 -->
+
+        <!-- MODAL 6 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              LUBRICAR RODILLO Y CANALES DE RETRACCIÓN
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 6 -->
+
+        <!-- MODAL 7 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              LUBRICAR PORTA HORQUILLAS Y ACCESORIO DE DESP LATERAL
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 7 -->
+
+        <!-- MODAL 8 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              FUNCIONAMIENTO DE SERVOACCIONAMIENTOS EN GENERAL
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="modal-input">
+                  <input
+                    type="date"
+                    id="txtYear"
+                    name="setCounter"
+                    min="2021-01-01"
+                    required
+                  />
+                  <div class="icons">
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/ICON_Team-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/82_Date-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/34_Repairs-54-72px.png"
+                      alt="logo user"
+                    />
+                    <img
+                      class="input-icon-modal"
+                      src="/imagen/26_Truck-54-72px.png"
+                      alt="logo user"
+                    />
+                  </div>
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 8 -->
+    </div>
+    <script src="/js/setModal.js"></script>
+  </body>
+</html>

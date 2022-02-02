@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Scania Sans Headline Bold;
+}
+
+@font-face {
+  font-family: "Scania Sans Headline Bold";
+  font-weight: normal;
+  src: url("/fonts/ScaniaSansCYHeadline-Bold.eot");
+  src: url("ScaniaSansHeadline-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ScaniaSansCYHeadline-Bold.woff2") format("woff2"),
+    url("/fonts/ScaniaSansCYHeadline-Bold.woff") format("woff"),
+    url("/fonts/ScaniaSansCYHeadline-Bold.ttf") format("truetype"),
+    url("ScaniaSans-Bold.svg#scaniasansv1bold") format("svg");
+}
+
+.body-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #97999b;
+  text-align: center;
+  display: grid;
+  grid-template:
+    "header" 15%
+    "main" auto
+    "footer" 5%;
+  overflow: hidden;
+}
+
+/*---HEADER---*/
+.header {
+  height: 100%;
+  grid-area: header;
+  text-align: center;
+  display: grid;
+  grid-template: " . title logo" / 1fr 4fr 1fr;
+}
+
+.title {
+  grid-area: title;
+  font-family: Scania Sans Headline Bold;
+  font-size: 65px;
+  color: #041e42;
+  background: #fff;
+  border: 4px solid #041e42;
+  border-radius: 60px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.logo {
+  grid-area: logo;
+  width: 150px;
+  margin: auto;
+  padding: 20px;
+}
+/*---HEADER---*/
+
+/*---MAIN---*/
+.main {
+  height: 100%;
+  grid-area: main;
+  display: grid;
+  grid-template:
+    "infoBox" 80%
+    "canDrive" 20%;
+}
+
+.infoBox {
+  grid-area: infoBox;
+  background-color: #44a878;
+  color: #fff;
+  font-size: 80px;
+  font-family: Scania Sans Headline Bold;
+  border: 4px solid #041e42;
+  border-radius: 50px;
+  margin: auto;
+  padding: 40px;
+}
+
+.canDrive {
+  grid-area: canDrive;
+  background-color: #fff;
+  color: #041e42;
+  font-size: 65px;
+  font-family: Scania Sans Headline Bold;
+  border: 4px solid #041e42;
+  border-radius: 50px;
+  margin: auto;
+  padding: 20px;
+}
+
+.success {
+  background-color: #44a878;
+}
+
+.warning {
+  background-color: #f2855f;
+}
+
+.danger {
+  color: #fafafa;
+  background-color: #d6001c;
+}
+
+/*---MAIN---*/
+
+.footer {
+  color: #fafafa;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1366px) {
+  .body-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #97999b;
+    text-align: center;
+    display: grid;
+    grid-template:
+      "header" 120px
+      "main" auto
+      "footer" 50px;
+    overflow: hidden;
+  }
+
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-template:
+      "infoBox"
+      "canDrive";
+  }
+
+  .infoBox {
+    width: auto;
+    height: 470px;
+    padding: 50px;
+  }
+
+  .canDrive {
+    height: 100px;
+    margin: 15px auto;
+    padding: auto 20px;
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 50px;
+    margin: 20px;
+    padding: 5px;
+  }
+
+  .checkbutton {
+    margin: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    grid-template:
+      "header" 15%
+      "main" auto
+      "footer" 50px;
+  }
+  .header {
+    height: 100%;
+    grid-area: header;
+    text-align: center;
+    display: grid;
+    grid-template: " . title logo" / 1fr 5fr 1fr;
+  }
+
+  .title {
+    border-radius: 50px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .infoBox {
+    width: auto;
+    height: 80%;
+    margin: 50px;
+    padding: 50px;
+  }
+
+  .canDrive {
+    height: 100px;
+    padding: auto 20px;
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Scania Sans Headline Bold;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: var(--scania-white);
+}
+
+/*-- COLORES --*/
+
+:root {
+  --scania-dark-grey: #53565a;
+  --scania-light-grey: #97999b;
+  --scania-white: #fafafa;
+  --scania-black: #2d2926;
+  --scania-primary-blue: #041e42;
+  --scania-secondary-blue: #05295a;
+}
+
+/*-- CONTENEDOR BODY --*/
+
+.body-container {
+  width: 100vw;
+  max-width: 1500px;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header" 7%
+    "main" 89%
+    "footer" 4%;
+  overflow: hidden;
+  background-color: var(--scania-primary-blue);
+  align-self: center;
+  margin: 0 auto;
+}
+
+/*-- HEADER --*/
+
+.header {
+  grid-area: header;
+  width: 100vw;
+  display: grid;
+  grid-template: "title mobile-logo" / 85vw 15vw;
+  background-color: var(--scania-white);
+  border-bottom: 5px solid var(--scania-primary-blue);
+}
+
+.title {
+  grid-area: title;
+  width: 100%;
+  max-height: 130px;
+  color: var(--scania-black);
+}
+
+.logo {
+  display: none;
+}
+
+.mobile-logo {
+  grid-area: mobile-logo;
+  width: 75%;
+  margin: auto;
+}
+
+/*-- MAIN --*/
+
+.infoBox {
+  grid-area: infoBox;
+  background-color: #44a878;
+  color: #fff;
+  font-size: 80px;
+  font-family: Scania Sans Headline Bold;
+  border: 4px solid #041e42;
+  border-radius: 50px;
+  margin: auto 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+.allowToDrive {
+  width: auto;
+  grid-area: allowToDrive;
+  background-color: #fff;
+  color: #041e42;
+  font-size: 65px;
+  font-family: Scania Sans Headline Bold;
+  border: 4px solid #041e42;
+  border-radius: 50px;
+  margin: auto 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.main {
+  height: 100%;
+  grid-area: main;
+  display: grid;
+  grid-template:
+    "infoBox" 80%
+    "allowToDrive" 20%;
+}
+
+.success {
+  background-color: #44a878;
+}
+
+.warning {
+  background-color: #f2855f;
+}
+
+.danger {
+  color: #fafafa;
+  background-color: #d6001c;
+}
+
+.main-mpo {
+  display: grid;
+  grid-template: "form";
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--scania-white);
+}
+
+.title {
+  grid-area: title;
+  width: 100%;
+  color: var(--scania-black);
+  font-size: 29px;
+}
+
+.button {
+  background-color: var(--scania-primary-blue);
+  color: var(--scania-white);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--scania-white);
+}
+
+.button:hover {
+  background-color: var(--scania-secondary-blue);
+  cursor: pointer;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.mobile-image-1 {
+  grid-area: mobile-image-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mpo_1,
+.mpo_2,
+.mpo_3 {
+  width: 230px;
+  border-radius: 5px;
+}
+
+.support-image {
+  width: 220px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbutton {
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border: 0px solid #041e42;
+  margin: 0 5px;
+}
+
+.checkbutton_ok::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("imagen/tick.png");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  position: relative;
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="radio"] {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+input[type="radio"]:checked + .checkbutton::before {
+  transform: scale(0.9) rotateZ(0deg);
+}
+
+.checkbutton_ok::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.checkbutton_no::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("imagen/cross.jpg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  position: relative;
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+.checkbutton_no::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.form {
+  display: grid;
+  grid-template:
+    "checklist" 45%
+    "image" 48%
+    "next" 6%;
+}
+
+.welcomeMessage {
+  color: #fafafa;
+  font-size: 85px;
+}
+
+.label {
+  color: var(--scania-white);
+}
+
+.boxes {
+  background-color: var(--scania-white);
+}
+
+.boxes,
+.label {
+  border: none;
+  border-radius: 20px;
+  font-family: Scania sans bold;
+  font-size: 0.7rem;
+  padding: 9px 0;
+  margin: 0 2px;
+  text-align: center;
+}
+
+.checklist {
+  grid-area: checklist;
+  display: grid;
+  grid-template:
+    ". . . ." 50px /
+    1fr 9fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  width: 80vw;
+  height: auto;
+  background-color: #fafafa;
+  color: #041e42;
+  font-size: 18px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.double-modal {
+  display: grid;
+  grid-template:
+    "close close" 35px
+    "modal-1 modal-2"
+    "modal-image modal-image" 350px;
+}
+
+.modal-image {
+  width: 100%;
+  transform: translate(50%);
+}
+
+.modal-1 {
+  grid-area: modal-1;
+}
+
+.modal-2 {
+  grid-area: modal-2;
+}
+
+.modal-subtitle {
+  font-family: Scania Sans Headline;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.modal-title {
+  padding: 20px;
+}
+
+.image-button {
+  margin: 20px 20px 0 20px;
+}
+
+.image-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Close Button */
+.close {
+  grid-area: close;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 460px) {
+  .header {
+    width: 100%;
+  }
+
+  .body-container {
+    grid-template:
+      "header" 11%
+      "main" 85%
+      "footer" 4%;
+  }
+
+  .title {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .allowToDrive {
+    width: auto;
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 568px) and (orientation: landscape) {
+  .body-container {
+    grid-template:
+      "header" 17%
+      "main" 76%
+      "footer" 8%;
+  }
+
+  .header {
+    height: 60px;
+    grid-template: ". title mobile-logo" / 1fr 7fr 1fr;
+  }
+
+  .title {
+    display: flex;
+    font-size: 25px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+}
+
+/*-- 640px & LANDSCAPE --*/
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  .body-container {
+    grid-template:
+      "header" 17%
+      "main" 76%
+      "footer" 8%;
+  }
+
+  .header {
+    height: 60px;
+
+    grid-template: ". title mobile-logo" / 1fr 7fr 1fr;
+  }
+
+  .title {
+    display: flex;
+    font-size: 25px;
+  }
+
+  .form {
+    grid-template:
+      "checklist image"
+      "next image" / 60% 40%;
+    padding: 0 10px;
+  }
+
+  .image {
+    grid-area: image;
+  }
+  .mpo_1,
+  .mpo_2,
+  .mpo_3 {
+    width: 230px;
+  }
+
+  .button {
+    font-size: 10px;
+  }
+}
+
+/*-- 767px --*/
+
+@media screen and (min-width: 767px) {
+  .mobile-image-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    grid-template: ". title mobile-logo" / 1fr 5fr 1fr;
+  }
+
+  .boxes,
+  .label {
+    font-size: 20px;
+  }
+  .button {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .checkbutton::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .checkbutton_no::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mpo_1,
+  .mpo_2,
+  .mpo_3 {
+    width: 340px;
+  }
+
+  .modal-content {
+    width: 70vw;
+  }
+
+  .modal-subtitle {
+    font-size: 20px;
+  }
+
+  .support-image {
+    width: 350px;
+  }
+}
+
+/*-- 812px & LANDSCAPE --*/
+
+@media screen and (min-width: 812px) and (orientation: landscape) {
+  .body-container {
+    grid-template:
+      "header" 15%
+      "main" 79%
+      "footer" 6%;
+  }
+
+  .header {
+    grid-template: ". title mobile-logo" / 1fr 7fr 1fr;
+  }
+
+  .title {
+    display: flex;
+    font-size: 25px;
+  }
+
+  .button {
+    font-size: 10px;
+  }
+
+  .checkbutton::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .checkbutton_no::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mpo_1,
+  .mpo_2,
+  .mpo_3 {
+    width: 230px;
+  }
+
+  .boxes,
+  .label {
+    font-size: 15px;
+  }
+}
+
+/*-- 950px --*/
+
+@media screen and (min-width: 950px) {
+  .header {
+    grid-template: ". title mobile-logo" / 1fr 5fr 1fr;
+  }
+
+  .title {
+    display: flex;
+    font-size: 50px;
+  }
+}
+
+/*-- 1024px --*/
+
+@media screen and (min-width: 1024px) {
+  .body-container {
+    grid-template:
+      "header" 15%
+      "main" 80%
+      "footer" 5%;
+  }
+
+  .header {
+    height: auto;
+    grid-template: ". title mobile-logo" / 1fr 7fr 1fr;
+  }
+
+  .mobile-logo {
+    margin: auto;
+  }
+
+  .title {
+    font-size: 55px;
+  }
+
+  .boxes,
+  .label {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .checkbutton::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .checkbutton_no::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mpo_1,
+  .mpo_2,
+  .mpo_3 {
+    width: 400px;
+  }
+
+  .form {
+    grid-template:
+      "checklist image"
+      "next image" 100px / 60% 40%;
+    padding: 0 10px;
+  }
+
+  .image {
+    grid-area: image;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .body-container {
+    grid-template:
+      "header" 15%
+      "main" 80%
+      "footer" 5%;
+  }
+
+  .header {
+    height: 100%;
+    grid-template: ". title mobile-logo" / 1fr 11fr 1fr;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+
+  .mobile-logo {
+    width: 100%;
+    margin: auto;
+  }
+
+  .boxes,
+  .label {
+    font-size: 25px;
+  }
+
+  .form {
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .footer {
+    font-size: 20px;
+  }
+
+  .mpo_1,
+  .mpo_2,
+  .mpo_3 {
+    width: 500px;
+  }
+
+  .infoBox,
+  .allowToDrive {
+    margin: auto;
+  }
+
+  .modal-content {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .header {
+    grid-template: ". title mobile-logo" / 1fr 10fr 1fr;
+  }
+
+  .title {
+    font-size: 100px;
+    margin: auto;
+  }
+
+  .button {
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .footer {
+    font-size: 30px;
+  }
+
+  .mpo_1,
+  .mpo_2,
+  .mpo_3 {
+    width: 500px;
+  }
+}

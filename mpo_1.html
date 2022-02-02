@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Vionnet" />
+    <meta
+      name="description"
+      content="Mantenimiento por operario autoelevador"
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento, operario, autoelevador, linde, scania"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MPO LINDE R-20 - 1</title>
+    <link rel="icon" href="imagen/scania_symbol.png" />
+    <link rel="stylesheet" href="style3.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css"
+    />
+    <!-- <script src="https://static.scania.com/build/global/3.5.5/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script> -->
+    <script>
+      var visible = (window.toolbar.visible = false);
+    </script>
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header">
+          <h1 class="title">MPO LINDE R-20</h1>
+          <img
+            id="web-logo"
+            class="logo"
+            alt="logo scania"
+            src="/imagen/scania2.png"
+          />
+          <img
+            id="mobile-logo"
+            class="mobile-logo"
+            src="/imagen/scania_symbol.png"
+            alt="logo scania para moviles"
+          />
+        </div>
+      </header>
+      <main class="main-mpo">
+        <form class="form" action="formulario_1.php" method="post">
+          <div class="checklist">
+            <h2 class="label">
+              Nombre <br />
+              elemento
+            </h2>
+            <h2 class="label">Elemento</h2>
+            <h2 class="label">OK</h2>
+            <h2 class="label">NO OK</h2>
+
+            <h2 class="boxes">E10</h2>
+            <button
+              type="button"
+              class="boxes myBtn"
+              title="Presione si quiere saber como realizar esta inspección"
+            >
+              Sentido de marcha: Adelante/Atrás
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok1"
+                name="mpo1"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok1"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok1"
+                name="mpo1"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok1"></label>
+            </div>
+
+            <h2 class="boxes">E20</h2>
+            <button type="button" class="boxes myBtn">
+              Funcionamiento de frenos
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok2"
+                name="mpo2"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok2"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok2"
+                name="mpo2"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok2"></label>
+            </div>
+
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+
+            <div></div>
+
+            <div></div>
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+
+            <div></div>
+
+            <div></div>
+
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+
+            <div></div>
+
+            <div></div>
+          </div>
+
+          <div class="image">
+            <!-- <img
+            class="mpo_1 "
+            alt="pedales autoelevador linde E-30"
+            src="imagen/linde2.3.png"
+          /> -->
+            <img
+              class="mpo_1"
+              alt="pedales autoelevador linde R-20"
+              src="imagen/linde2.4.jpg"
+            />
+          </div>
+
+          <div class="next">
+            <input
+              class="button button-start"
+              type="submit"
+              value="SIGUIENTE"
+            />
+          </div>
+        </form>
+      </main>
+      <footer>
+        <div class="footer">
+          <h3>Scania Argentina © 2021</h3>
+        </div>
+      </footer>
+
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span id="" class="close">&times;</span>
+          <div class="modal-subtitle">
+            <strong> Avance:</strong> <br /><br />
+            Apriete el pedal derecho (2) suavemente. El vehículo se pondrá en
+            marcha hacia adelante. <br /><br /><strong>Retroceso:</strong>
+            <br />
+            <br />
+            Apriete el pedal izquierdo (1) suavemente. El vehículo se pondrá en
+            marcha hacia atrás. <br />
+          </div>
+          <img class="support-image" src="imagen/1.png" alt="imagen-pedales" />
+          <div class="modal-subtitle">
+            La velocidad dependerá de la medida en que haya apretado el pedal.
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span class="close">&times;</span>
+          <div class="modal-subtitle">
+            <strong>Freno hidráulico:</strong> <br /><br />
+            Suelte los pedales de aceleración y apriete el pedal del freno (3).
+            <br />
+            <br />
+            Actúan hidráulicamente el freno del motor de tracción y los frenos
+            de las dos ruedas de carga.
+            <br />
+          </div>
+          <img class="support-image" src="imagen/2.png" alt="imagen-pedales" />
+          <div class="modal-subtitle">
+            <strong>
+              Sólo en situaciones de emergencia apriete este pedal de
+              freno.</strong
+            >
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+    </div>
+    <script src="js/setModal.js"></script>
+  </body>
+</html>

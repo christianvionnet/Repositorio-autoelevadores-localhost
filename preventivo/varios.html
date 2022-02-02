@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Vionnet" />
+    <meta
+      name="description"
+      content="Mantenimiento por operario autoelevador"
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento, operario, autoelevador, linde, scania"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Varios - Mantenimiento Preventivo LINDE E-30</title>
+
+    <link rel="icon" href="/imagen/scania_symbol.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css"
+    />
+    <!-- <script src="https://static.scania.com/build/global/3.5.5/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script> -->
+  </head>
+
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header">
+          <h1 class="title flex">VARIOS</h1>
+          <img class="logo flex" alt="logo scania" src="/imagen/scania2.png" />
+        </div>
+      </header>
+
+      <main>
+        <div class="menu-container">
+          <div class="timer-button">
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              RELEVAR DESVIACIONES
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              ESTADO Y FUNCIONAMIENTO CINTURÓN DE SEGURIDAD
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              VENCIMIENTO DEL MATAFUEGOS
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              DESGASTE DE RUEDAS
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              ESTADO DE FORRO DE PEDAL
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              IDENTIFICACIÓN DE MOVIMIENTOS
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              TENSIÓN DE RODILLOS DE MANGUERAS HIDRÁULICAS
+            </button>
+            <button
+              class="menu-button varios myBtn"
+              title="Para modificar las horas por defecto del MP de esta categoría haga click aquí."
+            >
+              RÓTULO CON CENTRO DE COSTO DE USUARIO
+            </button>
+          </div>
+          <div class="reset">
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+            <button
+              class="menu-button varios"
+              title="Para resetear el contador haga click aquí."
+            >
+              RESET
+            </button>
+          </div>
+        </div>
+
+        <div class="flex">
+          <a href="http://127.0.0.1:5501/preventivo/menump.html">
+            <button class="button logout">VOLVER</button>
+          </a>
+        </div>
+      </main>
+
+      <footer class="flex">
+        <div class="footer">
+          <h3>Scania Argentina © 2021</h3>
+        </div>
+      </footer>
+
+<!-- MODAL 1 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              RELEVAR DESVIACIONES
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 1 -->
+
+        <!-- MODAL 2 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              ESTADO Y FUNCIONAMIENTO CINTURÓN DE SEGURIDAD
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 2 -->
+
+        <!-- MODAL 3 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              VENCIMIENTO DEL MATAFUEGOS
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 3 -->
+
+        <!-- MODAL 4 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              DESGASTE DE RUEDAS
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 4 -->
+
+        <!-- MODAL 5 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              ESTADO DE FORRO DE PEDAL
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 5 -->
+
+        <!-- MODAL 6 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              IDENTIFICACIÓN DE MOVIMIENTOS
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 6 -->
+
+        <!-- MODAL 7 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              TENSIÓN DE RODILLOS DE MANGUERAS HIDRÁULICAS
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 7 -->
+
+        <!-- MODAL 8 -->
+          <div id="" class="modal">
+            <div class="modal-content animate-right">
+              <span id="" class="close">&times;</span>
+              <div class="modal-subtitle">
+                Ingrese y confirme la fecha para próximo Mantenimiento
+                Preventivo de:
+              </div>
+              <div class="modal-title">
+              RÓTULO CON CENTRO DE COSTO DE USUARIO
+              </div>
+              <form class="form flex" action="" method="POST">
+                <div class="icons">
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/82_Date-54-72px.png"
+                    alt="logo user"
+                  />
+                  <img
+                    class="input-icon-modal"
+                    src="/imagen/34_Repairs-54-72px.png"
+                    alt="logo user"
+                  />
+                </div>
+                <div class="modal-input">
+                  <input
+                    type="number"
+                    id="txtYear"
+                    placeholder="Año (2021 > )"
+                    name="setCounter"
+                    minlength="4"
+                    maxlength="4"
+                    min="2021"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtMonth"
+                    placeholder="Mes (1 - 12)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtDay"
+                    placeholder="Día (1 - 31)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="1"
+                    max="31"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="txtHour"
+                    placeholder="Hora (0 - 24)"
+                    name="setCounter"
+                    minlength="1"
+                    maxlength="2"
+                    min="0"
+                    max="24"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">CONFIRMAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL 8 -->
+    </div>
+    <script src="/js/setModal.js"></script>
+  </body>
+</html>

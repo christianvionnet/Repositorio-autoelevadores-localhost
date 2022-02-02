@@ -1,0 +1,468 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Scania Sans Headline Bold;
+}
+
+@font-face {
+  font-family: "Scania Sans Headline Bold";
+  font-weight: normal;
+  src: url("/fonts/ScaniaSansCYHeadline-Bold.eot");
+  src: url("ScaniaSansHeadline-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ScaniaSansCYHeadline-Bold.woff2") format("woff2"),
+    url("/fonts/ScaniaSansCYHeadline-Bold.woff") format("woff"),
+    url("/fonts/ScaniaSansCYHeadline-Bold.ttf") format("truetype"),
+    url("ScaniaSans-Bold.svg#scaniasansv1bold") format("svg");
+}
+
+.body-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #97999b;
+  background-image: url("../imagen/fondo1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  grid-template:
+    "header" 150px
+    "main" auto
+    "footer" 50px;
+  overflow: hidden;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  display: grid;
+  grid-template: " . title logo" / 1fr 5fr 1fr;
+  background: rgba(255, 255, 255, 0.7);
+  border-left: 10px solid #041e42;
+  margin-top: 0.7vw;
+  padding: 20px 0;
+}
+
+.title {
+  grid-area: title;
+  font-family: Scania Sans Headline Bold;
+  font-size: 3.7vw;
+  color: #041e42;
+}
+
+.logo {
+  grid-area: logo;
+  width: 8vw;
+  margin: auto;
+  /* width: 150px; */
+}
+
+.main {
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template: "section_1 section_2" / 1fr 1fr;
+}
+
+.section_1 {
+  grid-area: section_1;
+  display: grid;
+  grid-template:
+    "."
+    "."
+    "."
+    "."
+    ".";
+}
+
+.section_2 {
+  grid-area: section_2;
+  display: grid;
+  grid-template:
+    "."
+    "."
+    "."
+    "."
+    ".";
+}
+
+.menu-container {
+  width: 100%;
+  height: 92%;
+  display: grid;
+  grid-template: "timer-button reset" / 4fr 1fr;
+}
+
+.timer-button {
+  grid-area: timer-button;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  grid-area: reset;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario > .user {
+  text-align: center;
+  font-size: 20px;
+  margin: 35px auto;
+  color: #041e42;
+}
+
+.formulario {
+  background: rgba(255, 255, 255, 0.7);
+  width: 500px;
+  height: auto;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid #eaeaea;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fafafa;
+  border: none;
+  font-family: Scania Sans bold;
+  font-size: 16px;
+  margin-left: 5px;
+  padding: 10px auto;
+  outline: 0;
+  color: #041e42;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  transition: all 0.2s ease;
+}
+
+input[type="number"] {
+  margin: 0 0 20px 0;
+  padding: 15px;
+}
+
+.input-container {
+  border: 1px solid white;
+  background: white;
+  margin: 30px auto;
+  padding: 5px;
+  display: flex;
+}
+
+.input-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  padding: 5px;
+}
+
+input::placeholder {
+  font-family: Scania Sans;
+  padding: auto 10px;
+  color: #c8c9c7;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.button {
+  grid-area: button;
+  font-family: Scania Sans bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px 26px;
+  color: #fff;
+  background-color: #041e42;
+  border: 1px solid #041e42;
+  text-align: center;
+  width: 100%;
+}
+
+/* .logout {
+  width: auto;
+} */
+
+.button:hover {
+  background: rgb(29, 55, 91);
+}
+
+.footer,
+h3 {
+  grid-area: footer;
+  margin: auto;
+  color: #fafafa;
+  font-size: 15px;
+}
+
+.menu-button {
+  width: 98%;
+  height: auto;
+  font-family: Scania Sans Headline bold;
+  font-size: 2.8vw;
+  color: #041e42;
+  border: none;
+  border-left: 10px solid #041e42;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.menu-button:hover {
+  background-color: #fafafa;
+  transform: scale(1.03);
+  transition-duration: 0.4s;
+}
+
+.error-login {
+  color: #d6001c;
+  background-color: rgba(214, 0, 28, 0.1);
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  animation: 0.8s shake alternate;
+}
+
+.servo,
+.varios {
+  font-size: 1.8vw;
+}
+
+.hidraulico {
+  font-size: 2.3vw;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  width: 40vw;
+  height: auto;
+  background-color: #fafafa;
+  color: #041e42;
+  font-size: 20px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-subtitle {
+  font-family: Scania Sans Headline;
+  padding: 20px 20px 0 20px;
+}
+
+.modal-title {
+  padding: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form {
+  display: grid;
+  grid-template:
+    "input-icon-modal"
+    "modal-input"
+    "button" / 1fr;
+}
+
+.input-icon-modal {
+  grid-area: input-icon-modal;
+  width: 4vw;
+  margin: 20px 0;
+}
+
+.modal-input {
+  grid-area: modal-input;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="date"] {
+  width: 30vw;
+  padding: 15px;
+  align-self: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .form {
+    display: grid;
+    grid-template:
+      "modal-input"
+      "button";
+  }
+
+  .modal-title,
+  .modal-subtitle {
+    font-size: 15px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    height: 92%;
+    display: grid;
+    grid-template: "section_1" "section_2";
+  }
+
+  .section_1 {
+    grid-area: section_1;
+    display: grid;
+    grid-template:
+      "." auto
+      "." auto
+      "." auto
+      "." auto
+      "." auto / auto;
+  }
+
+  .section_2 {
+    grid-area: section_2;
+    display: grid;
+    grid-template:
+      "." auto
+      "." auto
+      "." auto
+      "." auto
+      "." auto;
+  }
+
+  .menu-button {
+    font-size: 4vw;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .body-container {
+    display: grid;
+    grid-template:
+      "header" 120px
+      "main" auto
+      "footer" 50px;
+    overflow: hidden;
+  }
+
+  .servo,
+  .varios {
+    margin: 3px;
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*/

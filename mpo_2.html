@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Vionnet" />
+    <meta
+      name="description"
+      content="Mantenimiento por operario autoelevador"
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento, operario, autoelevador, linde, scania"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MPO LINDE R-20 - 2</title>
+    <link rel="icon" href="imagen/scania_symbol.png" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style3.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css"
+    />
+    <!-- <script src="https://static.scania.com/build/global/3.5.5/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script> -->
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header">
+          <h1 class="title">MPO LINDE R-20</h1>
+          <img
+            id="web-logo"
+            class="logo"
+            alt="logo scania"
+            src="/imagen/scania2.png"
+          />
+          <img
+            id="mobile-logo"
+            class="mobile-logo"
+            src="/imagen/scania_symbol.png"
+            alt="logo scania para moviles"
+          />
+        </div>
+      </header>
+      <main class="main-mpo">
+        <!-- <div class=""> -->
+        <form class="form" action="formulario_2.php" method="POST">
+          <div class="checklist">
+            <h2 class="label">
+              Nombre <br />
+              elemento
+            </h2>
+            <h2 class="label">Elemento</h2>
+            <h2 class="label">OK</h2>
+            <h2 class="label">NO OK</h2>
+
+            <h2 class="boxes">E30</h2>
+            <button type="button" class="boxes myBtn">
+              Funcionamiento sistema de dirección
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok3"
+                name="mpo3"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok3"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok3"
+                name="mpo3"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok3"></label>
+            </div>
+
+            <h2 class="boxes">E40</h2>
+            <button type="button" class="boxes myBtn">
+              Movimientos hidráulicos
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok4"
+                name="mpo4"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok4"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok4"
+                name="mpo4"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok4"></label>
+            </div>
+
+            <h2 class="boxes">E50</h2>
+            <button type="button" class="boxes myBtn">
+              Nivel de carga de batería
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok5"
+                name="mpo5"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok5"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok5"
+                name="mpo5"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok5"></label>
+            </div>
+
+            <h2 class="boxes">E60</h2>
+            <button type="button" class="boxes myBtn">
+              Funcionamiento de bocina
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok6"
+                name="mpo6"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok6"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok6"
+                name="mpo6"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok6"></label>
+            </div>
+
+            <h2 class="boxes">E70</h2>
+            <button type="button" class="boxes myBtn">
+              Sensor hombre presente (asiento)
+            </button>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="ok7"
+                name="mpo7"
+                value="1"
+                required
+              />
+              <label class="checkbutton checkbutton_ok" for="ok7"></label>
+            </div>
+
+            <div>
+              <input
+                class="boxes"
+                type="radio"
+                id="no-ok7"
+                name="mpo7"
+                value="0"
+              />
+              <label class="checkbutton checkbutton_no" for="no-ok7"></label>
+            </div>
+          </div>
+
+          <div class="image">
+            <img
+              class="mpo_2"
+              alt="pedales autoelevador linde E-30"
+              src="imagen/linde_r20_2.jpg"
+            />
+          </div>
+
+          <div class="next">
+            <input
+              class="button button-start"
+              type="submit"
+              value="SIGUIENTE"
+            />
+          </div>
+        </form>
+        <!-- </div> -->
+      </main>
+      <footer>
+        <div class="footer">
+          <h3>Scania Argentina © 2021</h3>
+        </div>
+      </footer>
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span id="" class="close">&times;</span>
+          <div class="modal-subtitle">
+            <strong> Dirección:</strong> <br /><br />
+            La perilla de dirección (1) debe sujetarse siempre que el vehículo
+            esté en movimiento. <br /><br />
+            Compruebe si la dirección del vehículo responde girando de un
+            extremo a otro la perilla (1), mientras avanza o retrocede
+            lentamente.
+          </div>
+          <img
+            class="support-image"
+            src="imagen/3.png"
+            alt="imagen-dirección"
+          />
+        </div>
+      </div>
+      <!-- MODAL -->
+
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span class="close">&times;</span>
+          <div class="modal-subtitle modal-1">
+            <strong>Palanca de mando (1)</strong> <br />
+            <br />
+            <strong>Elevación del portahorquillas:</strong> <br />
+            Desplace palanca en dirección C.
+            <br />
+            <br />
+            <strong>Bajada del portahorquillas:</strong> <br />
+            Desplace palanca en dirección D.
+            <br /><br />
+            <strong> Desplazamiento hacia fuera del mástil: </strong> <br />
+
+            Desplace palanca en dirección B. <br />
+            <br />
+            <strong> Desplazamiento hacia atrás del mástil: </strong> <br />
+
+            Desplace palanca en dirección A.
+          </div>
+          <div class="modal-subtitle modal-2">
+            <strong>Palanca de mando (2)</strong> <br /><br />
+
+            <strong>Inclinación hacia adelante del portahorquillas:</strong>
+            <br />
+            Desplace palanca en dirección B.
+            <br />
+            <br />
+            <strong>Inclinación hacia atrás del portahorquillas:</strong>
+            <br />
+            Desplace palanca en la dirección A.
+            <br /><br />
+            <strong> Accesorio de desplazamiento lateral:</strong>
+            <br />
+            Para desplazar a la izquierda, mover palanca en dirección D.
+            <br />
+            Para desplazarlo a la izquierda, mover palanca en dirección C.
+            <br />
+          </div>
+          <div class="image-button-container">
+            <img
+              class="support-image"
+              src="imagen/4.png"
+              alt="imagen-comandos"
+            />
+            <button class="button image-button">Siguiente</button>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span id="" class="close">&times;</span>
+          <div class="modal-subtitle">
+            <strong> Comprobación del estado de carga de la batería</strong>
+            <br /><br />
+            Visualice el indicador de 10 segmentos:
+            <br />
+            Consta de cinco segmentos verdes (3), tres amarillos (2) y dos rojos
+            (1).
+            <br /><br />
+            Si el indicador se encuentra en rojo
+            <strong> la batería debe recargarse o sustituirse.</strong
+            ><br /><br />
+
+            Las prestaciones se reducirán cuando la batería se haya descargado
+            en un 80% dejando una capacidad residual del 20%.
+          </div>
+          <img
+            class="support-image"
+            src="/imagen/7.1.png"
+            alt="imagen-bateria"
+          />
+          <div class="modal-subtitle">
+            <strong>
+              A una descarga del 80%, se encenderá el indicador de prestaciones
+              reducidas (4) cuando se accione la palanca de elevación</strong
+            >
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span class="close">&times;</span>
+          <div class="modal-subtitle">
+            <strong>Accionamiento de la bocina</strong> <br /><br />
+            Pulse el botón (1). <br /><br />
+            La bocina deberá funcionar mientras mantenga pulsado el botón.
+            <br />
+          </div>
+          <img class="support-image" src="/imagen/5.png" alt="imagen-bocina" />
+        </div>
+      </div>
+      <!-- MODAL -->
+      <!-- MODAL -->
+      <div class="modal myModal">
+        <div class="modal-content animate-right">
+          <span id="" class="close">&times;</span>
+          <div class="modal-subtitle">
+            <strong> Sensor hombre presente</strong> <br /><br />
+            Verifique si el freno del vehículo se bloquea al levantarse usted
+            del asiento. <br />
+          </div>
+          <img class="support-image" src="/imagen/12.png" alt="imagen-bocina" />
+          <div>
+            <br />
+            <strong>
+              El vehiculo debe detenerse mientras no se encuentre nadie sentado
+              sobre el asiento.</strong
+            >
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+    </div>
+    <script src="js/setModal.js"></script>
+  </body>
+</html>

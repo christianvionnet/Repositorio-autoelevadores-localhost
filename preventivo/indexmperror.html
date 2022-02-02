@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Vionnet" />
+    <meta
+      name="description"
+      content="Mantenimiento por operario autoelevador"
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento, operario, autoelevador, linde, scania"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mantenimiento Preventivo LINDE E-30 - Index Error</title>
+
+    <link rel="icon" href="/imagen/scania_symbol.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css"
+    />
+    <!-- <script src="https://static.scania.com/build/global/3.5.5/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script> -->
+  </head>
+
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header">
+          <h1 class="title flex">MANTENIMIENTO PREVENTIVO</h1>
+          <img class="logo flex" alt="logo scania" src="/imagen/scania2.png" />
+        </div>
+      </header>
+
+      <main class="main flex">
+        <div>
+          <form class="formulario" action="loginmp.php" method="POST">
+            <h2 class="user">Ingrese usuario y contraseña</h2>
+            <h3 class="error-login" id="error-login">
+              Usuario y/o contraseña inválidos
+            </h3>
+            <div class="input-container">
+              <label for="usuario"></label>
+              <img
+                class="input-icon"
+                src="/imagen/08_My_scania_Mobile-24-48px.png"
+                alt="logo user"
+              />
+
+              <input
+                type="text"
+                name="usuario"
+                id="usuario"
+                placeholder="Usuario"
+                required
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="pass"></label>
+              <img
+                class="input-icon"
+                src="/imagen/27_Engine-24-48px.png"
+                alt="logo pass"
+              />
+              <input
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+
+            <button class="button" type="submit">ENTRAR</button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="flex">
+        <div class="footer">
+          <h3>Scania Argentina © 2021</h3>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
