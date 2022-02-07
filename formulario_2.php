@@ -49,15 +49,15 @@
   }else{
     echo "Connection established.<br />";
 
-    // $INSERT = "INSERT INTO TABLA_MPO_2 (mpo_3,mpo_4,mpo_5,mpo_6,mpo_7) VALUES(?,?,?,?,?)";
+    $INSERT = "INSERT INTO TABLA_MPO_2 (mpo_3,mpo_4,mpo_5,mpo_6,mpo_7) VALUES(?,?,?,?,?)";
 
-    $UPDATE = "UPDATE AUTO_1 SET [mpo_3] = $mpo3, [mpo_4] = $mpo4, [mpo_5] = $mpo5, [mpo_6] = $mpo6, [mpo_7] = $mpo7";
+    // $UPDATE = "UPDATE AUTO_1 SET [mpo_3] = $mpo3, [mpo_4] = $mpo4, [mpo_5] = $mpo5, [mpo_6] = $mpo6, [mpo_7] = $mpo7";
 
     $params = array($mpo3,$mpo4,$mpo5,$mpo6,$mpo7);
 
     $stmt = sqlsrv_query($conn, $UPDATE, $params);
 
-    echo "<script>window.location = 'http://localhost/mpo_3.html'</script>";
+    echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/mpo_3.html'</script>";
 
     $stmt->close();
     $conn->close();

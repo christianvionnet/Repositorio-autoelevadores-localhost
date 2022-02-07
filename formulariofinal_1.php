@@ -63,11 +63,11 @@
     while ($row = sqlsrv_fetch_array($stmt)) {
       if ($row > 0) {
         if($row[1] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if($row[2] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else {
-          echo "<script>window.location = 'http://localhost/formulariofinal_2.php'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/formulariofinal_2.php'</script>";
         }
       } else {
         echo "No hay resultados.";

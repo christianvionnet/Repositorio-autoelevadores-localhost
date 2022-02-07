@@ -66,7 +66,7 @@ if( !$conn ) {
     $stmt = sqlsrv_query($conn, $INSERT);
   }
 
-  echo "<script>window.location = 'http://localhost/mpo_1.html'</script>";
+  echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/mpo_1.html'</script>";
 
   $stmt->close();
   $conn->close();

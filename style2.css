@@ -353,9 +353,9 @@
       "first-form mobile-image-1" 10% / 50% 50%;
   }
 
-  /* .index {
-    width: 550px;
-  } */
+  .index {
+    width: 450px;
+  }
 
   .mobile-logo {
     margin: auto;

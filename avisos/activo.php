@@ -19,7 +19,7 @@ if( !$conn ) {
 
   $stmt = sqlsrv_query($conn, $UPDATE);
 
-  echo "<script>window.location = 'http://localhost/index.html'</script>";
+  echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/index.html'</script>";
 
 }
 

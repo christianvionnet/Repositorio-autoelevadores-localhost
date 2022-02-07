@@ -24,7 +24,7 @@
     />
     <meta
       http-equiv="refresh"
-      content="10;URL=http://localhost/scania/mpofinalizado.html"
+      content="10;URL=http://SSA1014.global.scd.scania.com/scania/mpofinalizado.html"
     />
 
     <link rel="icon" href="/imagen/scania_symbol.png" />

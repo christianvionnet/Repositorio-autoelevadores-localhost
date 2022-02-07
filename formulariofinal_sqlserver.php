@@ -21,31 +21,31 @@
     while ($row = sqlsrv_fetch_array($stmt)) {
       if ($row > 0) {
         if($row[1] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if($row[2] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if($row[3] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if ($row[7] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if ($row[4] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgobajo.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgobajo.html'</script>";
         } else if ($row[5] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgobajo.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgobajo.html'</script>";
         } else if ($row[6] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgobajo.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgobajo.html'</script>";
         } else if($row[8] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if ($row[9] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if ($row[10] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgoalto.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgoalto.html'</script>";
         } else if ($row[11] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgobajo.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgobajo.html'</script>";
         } else if ($row[12] == 0) {
-          echo "<script>window.location = 'http://localhost/avisos/riesgobajo.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/riesgobajo.html'</script>";
         } else {
-          echo "<script>window.location = 'http://localhost/avisos/mpofinalizado.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/avisos/mpofinalizado.html'</script>";
         }
       } else {
         echo "No hay resultados.";

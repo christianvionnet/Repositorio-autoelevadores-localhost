@@ -40,15 +40,15 @@
      }else{
           echo "Connection established.<br />";
 
-          // $INSERT = "INSERT INTO TABLA_MPO_1 (mpo_1,mpo_2) VALUES(?,?)";
+          $INSERT = "INSERT INTO TABLA_MPO_1 (mpo_1,mpo_2) VALUES(?,?)";
 
-          $INSERT = "INSERT INTO AUTO_1 (mpo_1,mpo_2) VALUES(?,?)";
+          // $INSERT = "INSERT INTO AUTO_1 (mpo_1,mpo_2) VALUES(?,?)";
 
           $params = array($mpo1,$mpo2);
 
           $stmt = sqlsrv_query($conn, $INSERT, $params);
 
-          echo "<script>window.location = 'http://localhost/mpo_2.html'</script>";
+          echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/mpo_2.html'</script>";
 
           $stmt->close();
           $conn->close();
