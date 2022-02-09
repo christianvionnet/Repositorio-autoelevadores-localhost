@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Scania Sans Headline Bold";
+  font-weight: normal;
+  src: url("fonts/ScaniaSansCYHeadline-Bold.eot");
+  src: url("fonts/ScaniaSansCYHeadline-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Scania Sans Bold";
+  font-weight: normal;
+  src: url("fonts/ScaniaSansCY-Bold.eot");
+  src: url("fonts/ScaniaSansCY-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Scania Sans Headline";
+  font-weight: normal;
+  src: url("fonts/ScaniaSansCYHeadline-Regular.eot");
+  src: url("fonts/ScaniaSansCYHeadline-Regular.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;

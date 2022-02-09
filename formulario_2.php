@@ -55,7 +55,7 @@
 
     $params = array($mpo3,$mpo4,$mpo5,$mpo6,$mpo7);
 
-    $stmt = sqlsrv_query($conn, $UPDATE, $params);
+    $stmt = sqlsrv_query($conn, $INSERT, $params);
 
     echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/mpo_3.html'</script>";
 

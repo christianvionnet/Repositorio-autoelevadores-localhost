@@ -20,4 +20,4 @@ window.setInterval(function () {
       "http://SSA1014.global.scd.scania.com/avisos/activo.php"
     );
   }
-}, 1000); //In that case 1000 miliseconds equals to 1 second
+}, 5000); //In that case 1000 miliseconds equals to 1 second

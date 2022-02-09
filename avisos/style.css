@@ -1,19 +1,29 @@
+@font-face {
+  font-family: "Scania Sans Headline Bold";
+  font-weight: normal;
+  src: url("/fonts/ScaniaSansCYHeadline-Bold.eot");
+  src: url("/fonts/ScaniaSansCYHeadline-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Scania Sans Bold";
+  font-weight: normal;
+  src: url("/fonts/ScaniaSansCY-Bold.eot");
+  src: url("/fonts/ScaniaSansCY-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Scania Sans Headline";
+  font-weight: normal;
+  src: url("/fonts/ScaniaSansCYHeadline-Regular.eot");
+  src: url("/fonts/ScaniaSansCYHeadline-Regular.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Scania Sans Headline Bold;
-}
-
-@font-face {
-  font-family: "Scania Sans Headline Bold";
-  font-weight: normal;
-  src: url("/fonts/ScaniaSansCYHeadline-Bold.eot");
-  src: url("ScaniaSansHeadline-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/ScaniaSansCYHeadline-Bold.woff2") format("woff2"),
-    url("/fonts/ScaniaSansCYHeadline-Bold.woff") format("woff"),
-    url("/fonts/ScaniaSansCYHeadline-Bold.ttf") format("truetype"),
-    url("ScaniaSans-Bold.svg#scaniasansv1bold") format("svg");
 }
 
 .body-container {

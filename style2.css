@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Scania Sans Headline Bold";
+  font-weight: normal;
+  src: url("fonts/ScaniaSansCYHeadline-Bold.eot");
+  src: url("fonts/ScaniaSansCYHeadline-Bold.woff2") format("woff2");
+}
+/* 
+@font-face {
+  font-family: "Scania Sans Headline Bold";
+  font-weight: normal;
+  src: url("ScaniaSansCYHeadline-Bold.eot");
+  src: url("ScaniaSansCYHeadline-Bold.eot?#iefix") format("embedded-opentype"),
+    url("ScaniaSansCYHeadline-Bold.woff2") format("woff2"),
+    url("ScaniaSansCYHeadline-Bold.woff") format("woff"),
+    url("ScaniaSansCY-Bold.ttf") format("truetype");
+  unicode-range: U+0400-04FF;
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -454,6 +472,7 @@
   .main__welcome {
     display: flex;
     flex-direction: column;
+    /* background-color: violet; */
     /* grid-template: "." "."; */
   }
 

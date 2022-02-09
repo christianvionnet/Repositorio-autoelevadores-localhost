@@ -6,7 +6,7 @@
 
 <html>
   <head>
-    <title>MPO LINDE E-30 Bienvenida - MPO finalizado</title>
+    <title>MPO LINDE R-20 Bienvenida - MPO finalizado</title>
 
     <meta charset="utf-8" />
     <meta name="author" content="Christian Vionnet" />
@@ -20,7 +20,7 @@
     />
     <meta
       name="viewport"
-      content="widht=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta
       http-equiv="refresh"

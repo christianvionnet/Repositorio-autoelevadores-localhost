@@ -46,24 +46,23 @@ if( !$conn ) {
 
   echo "Connection established.<br />";
 
-  $SELECT = "SELECT * FROM HABILITACION ORDER BY id DESC";
+  $SELECT = "SELECT * FROM HABILITACION";
 
   $stmt = sqlsrv_query($conn,$SELECT);
 
   $row = sqlsrv_fetch_array($stmt);
-
-
-  if( $row ) {
-
-    $UPDATE = "UPDATE HABILITACION SET habilitado='1'";
-
-    $stmt = sqlsrv_query($conn,$UPDATE);
-
-  } else {
+  
+  if( !$row ) {
 
     $INSERT = "INSERT INTO HABILITACION (habilitado) VALUES(1)";
 
     $stmt = sqlsrv_query($conn, $INSERT);
+
+  } else {
+
+    $UPDATE = "UPDATE HABILITACION SET habilitado='1'";
+
+    $stmt = sqlsrv_query($conn,$UPDATE);
   }
 
   echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/mpo_1.html'</script>";
