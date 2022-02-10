@@ -51,6 +51,7 @@
 
     $INSERT = "INSERT INTO TABLA_MPO_2 (mpo_3,mpo_4,mpo_5,mpo_6,mpo_7) VALUES(?,?,?,?,?)";
 
+    // PETICION QUE USABA EN CASO QUE USE UNA SOLA TABLA: AUTO_1
     // $UPDATE = "UPDATE AUTO_1 SET [mpo_3] = $mpo3, [mpo_4] = $mpo4, [mpo_5] = $mpo5, [mpo_6] = $mpo6, [mpo_7] = $mpo7";
 
     $params = array($mpo3,$mpo4,$mpo5,$mpo6,$mpo7);

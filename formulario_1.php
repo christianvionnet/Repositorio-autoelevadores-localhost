@@ -42,6 +42,7 @@
 
           $INSERT = "INSERT INTO TABLA_MPO_1 (mpo_1,mpo_2) VALUES(?,?)";
 
+          // PETICION QUE USABA EN CASO QUE USE UNA SOLA TABLA: AUTO_1
           // $INSERT = "INSERT INTO AUTO_1 (mpo_1,mpo_2) VALUES(?,?)";
 
           $params = array($mpo1,$mpo2);

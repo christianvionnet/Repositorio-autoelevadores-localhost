@@ -49,12 +49,17 @@
   }else{
     echo "Connection established.<br />";
 
+    // PETICION QUE USABA EN CASO QUE USE UNA SOLA TABLA: AUTO_1
     // $UPDATE = "UPDATE AUTO_1 SET [mpo_8] = $mpo8, [mpo_9] = $mpo9, [mpo_10] = $mpo10, [mpo_11] = $mpo11, [mpo_12] = $mpo12";
 
     $INSERT = "INSERT INTO TABLA_MPO_3 (mpo_8,mpo_9,mpo_10,mpo_11,mpo_12) VALUES(?,?,?,?,?)";
     $params = array($mpo8,$mpo9,$mpo10,$mpo11,$mpo12);
     $stmt = sqlsrv_query($conn, $INSERT, $params);
-    echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/formulariofinal_sqlserver.php'</script>";
+
+    // FORMULARIO QUE USABA EN CASO QUE USE UNA SOLA TABLA: AUTO_1
+    // echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/formulariofinal_sqlserver.php'</script>";
+
+     echo "<script>window.location = 'http://SSA1014.global.scd.scania.com/formulariofinal_1.php'</script>";
     // $stmt->close();
 
     $UPDATE = "UPDATE HABILITACION SET habilitado = '1'";

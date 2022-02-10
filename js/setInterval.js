@@ -7,15 +7,15 @@ window.setInterval(function () {
   console.log(hours);
   var minutes = date.getMinutes(); //Get that date minutes (from 0 to 59)
 
-  if (hours >= 10 && minutes >= 50 && hours <= 10 && minutes <= 59) {
+  if (hours >= 7 && minutes >= 00 && hours <= 14 && minutes <= 59) {
     window.location.assign(
       "http://SSA1014.global.scd.scania.com/avisos/activo.php"
     );
-  } else if (hours >= 11 && minutes >= 00 && hours <= 11 && minutes <= 09) {
+  } else if (hours >= 15 && minutes >= 00 && hours <= 22 && minutes <= 59) {
     window.location.assign(
       "http://SSA1014.global.scd.scania.com/avisos/activo.php"
     );
-  } else if (hours >= 11 && minutes >= 10 && hours <= 11 && minutes <= 19) {
+  } else if (hours >= 23 && minutes >= 00 && hours <= 6 && minutes <= 59) {
     window.location.assign(
       "http://SSA1014.global.scd.scania.com/avisos/activo.php"
     );
