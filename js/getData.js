@@ -1,4 +1,4 @@
-const submitButton = document.querySelector("button");
+const startButton = document.querySelector("button");
 
 //Defino la funcion getData para leer la base de datos con la API
 async function getData(url = "", data = {}) {
@@ -29,7 +29,7 @@ getData("http://10.251.225.107/Autoelevadores/Autoelevadores/get").then(
   }
 );
 
-submitButton.addEventListener("click", () => {
+startButton.addEventListener("click", () => {
   window.setInterval(function () {
     //This will trigger every X miliseconds
 

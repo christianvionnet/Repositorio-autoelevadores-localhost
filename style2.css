@@ -322,9 +322,9 @@
 @media screen and (min-width: 767px) {
   .main {
     grid-template:
-      "narrow-screen-1 mobile-image-1"
-      "narrow-screen-2 mobile-image-1"
-      "first-form mobile-image-1" / 50% 50%;
+      "narrow-screen-1 mobile-image-1" 50%
+      "narrow-screen-2 mobile-image-1" 0%
+      "first-form mobile-image-1" 50%/ 50% 50%;
   }
 
   .mobile-image-1 {
@@ -339,6 +339,7 @@
 
   .header {
     grid-template: ". title mobile-logo" / 1fr 5fr 1fr;
+
     /* max-height: 150px; */
   }
 
@@ -444,9 +445,9 @@
 
   .main {
     grid-template:
-      "narrow-screen-1 mobile-image-1" 45%
-      "narrow-screen-2 mobile-image-1" 45%
-      "first-form mobile-image-1" 10% / 50% 50%;
+      "narrow-screen-1 mobile-image-1" 55%
+      "narrow-screen-2 mobile-image-1" 15%
+      "first-form mobile-image-1" 35% / 50% 50%;
   }
 
   .index {
@@ -462,7 +463,7 @@
   .narrow-screen-1,
   .narrow-screen-2,
   .first-form {
-    font-size: 55px;
+    font-size: 45px;
   }
 
   .button {
@@ -516,9 +517,9 @@
 
   .main {
     grid-template:
-      "narrow-screen-1 mobile-image-1" 40%
-      "narrow-screen-2 mobile-image-1" 40%
-      "first-form mobile-image-1" 20% / 50% 50%;
+      "narrow-screen-1 mobile-image-1" 55%
+      "narrow-screen-2 mobile-image-1" 15%
+      "first-form mobile-image-1" 35% / 50% 50%;
   }
   .title,
   .narrow-screen-1,
